@@ -1,0 +1,131 @@
+  body{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  
+}
+h1{
+  text-align: left;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: center;
+}
+body {
+    font-size: 15pt;
+}
+.ecran {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Medias/black-stone.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carte {
+  width: 50%;
+  max-width: 400px;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid rgba(255, 225, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+.carte img{
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+  
+}
+.carte h2{
+  
+  font-size: 20px;
+  font-weight: 200px;
+  margin-top: 10px;
+ 
+}
+.carte p {
+  font-size: 20px;
+  margin: 50px auto;
+  max-width: 800px;
+ text-align: center;
+}
+.carte .reseau img{
+width: 30px; 
+border-radius: 50%;
+margin: 10px 5px;
+transition: background 0.5s;
+}
+.carte .reseau img:hover{
+ background: rgba(240, 90, 195); 
+}
+.bouton {
+  text-decoration: none;
+  display: inline-block;
+ font-size: 15px;
+ font-weight: 500;
+ background: white;
+ color: rgba(226, 59,184);
+ padding: 10px;
+ border-radius: 30px;
+ margin: 30px 0 10px;
+ 
+}
+.logo { 
+  color: white;
+  text-align: content;
+  align-items: center;
+  justify-content: center;
+  position: center;
+  
+}
+.overlay,
+.navbar,
+.header .btn {display: none; }
+.header { 
+  --color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 100%;  
+padding-block: 14px;
+z-index: 4;
+transition: var(--transition-1);
+
+}
+.header.active 
+{
+   --color: var(--st-patricks-blue);
+   position: fixed;
+   background-image: url(/Medias/background.png);
+   box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+}
+
+.container {
+padding-inline: 15px; 
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+} 
+.logo {
+  font-size: var(--fs-3);
+}
+.navbar-open-btn{
+  color: var(--color);
+  font-size: 32px;
+  padding: 4px;
+  
+}
+.navbar {
+  background-color: var(--white)
+}
